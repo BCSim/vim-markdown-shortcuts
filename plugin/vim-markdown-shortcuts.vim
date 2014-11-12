@@ -51,7 +51,21 @@ function Header7()
     call setline(".", repLine)
 endfunction
 
-" Keyboard Mapping
+" Strong
+function Strong()
+    let curLine = getline(".")
+    let repLine = substitute(curLine, "\\(.*\\)", "\*\*\\1\*\*", "")
+    call setline(".", repLine)
+endfunction
+
+" Emphasize
+function Emph()
+    let curLine = getline(".")
+    let repLine = substitute(curLine, "\\(.*\\)", "\*\\1\*", "")
+    call setline(".", repLine)
+endfunction
+
+" Default Keyboard Mapping
 map \h0 :call Header0()<CR>
 map \h1 :call Header1()<CR>
 map \h2 :call Header2()<CR>
@@ -60,5 +74,8 @@ map \h4 :call Header4()<CR>
 map \h5 :call Header5()<CR>
 map \h6 :call Header6()<CR>
 map \h7 :call Header7()<CR>
+
+map \st :call Strong()<CR>
+map \em :call Emph()<CR>
 "command -nargs=0  Foo call s:Header1()
 
