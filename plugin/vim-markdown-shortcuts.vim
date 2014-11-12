@@ -54,11 +54,11 @@ endfunction
 " Keyboard Mapping
 map \h0 :call Header0()<CR>
 map \h1 :call Header1()<CR>
-map \h2 :call Header1()<CR>
-map \h3 :call Header1()<CR>
-map \h4 :call Header1()<CR>
-map \h5 :call Header1()<CR>
-map \h6 :call Header1()<CR>
-map \h7 :call Header1()<CR>
+map \h2 :call Header2()<CR>
+map \h3 :call Header3()<CR>
+map \h4 :call Header4()<CR>
+map \h5 :call Header5()<CR>
+map \h6 :call Header6()<CR>
+map \h7 :call Header7()<CR>
 "command -nargs=0  Foo call s:Header1()
 
