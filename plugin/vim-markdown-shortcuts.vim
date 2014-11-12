@@ -17,37 +17,37 @@ endfunction
 
 function Header2()
     let curLine = getline(".")
-    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\##\\1", "")
+    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#\#\\1", "")
     call setline(".", repLine)
 endfunction
 
 function Header3()
     let curLine = getline(".")
-    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\###\\1", "")
+    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#\#\#\\1", "")
     call setline(".", repLine)
 endfunction
 
 function Header4()
     let curLine = getline(".")
-    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\####\\1", "")
+    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#\#\#\#\\1", "")
     call setline(".", repLine)
 endfunction
 
 function Header5()
     let curLine = getline(".")
-    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#####\\1", "")
+    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#\#\#\#\#\\1", "")
     call setline(".", repLine)
 endfunction
 
 function Header6()
     let curLine = getline(".")
-    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\######\\1", "")
+    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#\#\#\#\#\#\\1", "")
     call setline(".", repLine)
 endfunction
 
 function Header7()
     let curLine = getline(".")
-    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#######\\1", "")
+    let repLine = substitute(curLine, "^\\\#\\{0,}\\(.*\\)", "\#\#\#\#\#\#\#\\1", "")
     call setline(".", repLine)
 endfunction
 
